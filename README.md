@@ -1,6 +1,8 @@
 # pre-bp
-very small single-page app boilerplate<br />
-live example - https://pre-bp.github.io/<br />
+very small single-page app boilerplate
+
+live example - https://pre-bp.github.io/
+
 by [@matannoam](https://github.com/matannoam/)
 
 ## a react app without react
