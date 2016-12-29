@@ -5,7 +5,7 @@ export default function MainPage ({ libraries }) {
   return (
     <div>
       <p>
-        <a href="https://github.com/matannoam/pre-bp">
+        <a href="https://github.com/pre-bp/pre-bp">
           see the code
         </a> &amp; start building something fast
       </p>

@@ -1,5 +1,7 @@
 # pre-bp
-very small single-page app boilerplate
+very small single-page app boilerplate<br />
+live example - https://pre-bp.github.io/<br />
+by [@matannoam](https://github.com/matannoam/)
 
 ## a react app without react
 React is great, but it's bigger than it needs to be to start a project.
@@ -23,7 +25,7 @@ yarn start
 npm start
 ```
 
-and open your browser to [localhost:8080](http://localhost:8080). Open the console to see logging.
+and open your browser to http://localhost:8080. Open the console to see logging.
 
 Build a release for production with
 ```
@@ -48,8 +50,8 @@ just looking for compatibilty with other react packages, try using
 - [preact](https://preactjs.com/) - "a fast 3kB alternative to React with the same ES6 API."
 - [redux](http://redux.js.org/) - a small predictable state container
 - [preact-redux](https://github.com/developit/preact-redux) - [react-redux](http://redux.js.org/docs/basics/UsageWithReact.html) with react aliased to preact
-- [history](https://github.com/mjackson/history) - manage session history with JavaScript. This provides a method to create history for react-router-redux to sync with the app state and create middleware for.
-- [preact-router](https://github.com/developit/preact-router) - provides Route Router, and Link components with much less overhead than react-router
+- [history](https://github.com/mjackson/history) - manage session history with JavaScript. This provides a method to create history for react-router-redux to sync with the app state and create middleware for. This is what react-router uses, but pre-bp uses a [bare bones implementation](https://github.com/pre-bp/pre-bp/blob/master/src/lib/browserHistory.js) that only imports about half as much code.
+- [preact-router](https://github.com/developit/preact-router) - provides Route, Router, and Link components with much less overhead than react-router
 - [react-router-redux](https://github.com/reactjs/react-router-redux) - tools to pass navigation commands as actions
 - [normalize.css](https://necolas.github.io/normalize.css/) is in the html header for nice, modern styles.
 
