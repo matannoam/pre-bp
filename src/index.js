@@ -3,7 +3,7 @@ import { Provider } from 'preact-redux'
 
 import { Router, Route } from 'preact-router'
 import { syncHistoryWithStore } from 'react-router-redux'
-import browserHistory from 'react-router/lib/browserHistory'
+import browserHistory from './lib/browserHistory'
 
 import configureStore from './stores/configureStore'
 import * as actions from './actions'
