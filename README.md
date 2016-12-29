@@ -58,7 +58,7 @@ just looking for compatibilty with other react packages, try using
 - [webpack](https://webpack.github.io/) is the new standard for bundling
 react apps. UglifyJS is used by default for production builds.
 - webpack-dev-server uses [Express.js](http://expressjs.com/) to serve the app in development.
-- [babel](https://babeljs.io/) with babel-loader and es2015 and react presets, used by default for production builds.
+- [babel](https://babeljs.io/) is a transpiler, which allows the code to be run in most modern browsers. The es2015 and react presets are included and used by default for production builds, and well as [stage-2](https://git.io/es-next#stage-2) for spreads and other syntax.
 - [webpack-bundle-size-analyzer](https://github.com/robertknight/webpack-bundle-size-analyzer) - helps confirm the production build are tiny
 - [redux-logger](https://github.com/evgenyrodionov/redux-logger) - logs redux states and actions in the console. included as a dependecy, but not included in
 packing thanks to require().
