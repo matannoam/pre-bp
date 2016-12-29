@@ -48,6 +48,10 @@ just looking for compatibilty with other react packages, try using
 - [preact](https://preactjs.com/) - "a fast 3kB alternative to React with the same ES6 API."
 - [redux](http://redux.js.org/) - a small predictable state container
 - [preact-redux](https://github.com/developit/preact-redux) - [react-redux](http://redux.js.org/docs/basics/UsageWithReact.html) with react aliased to preact
+- [history](https://github.com/mjackson/history) - manage session history with JavaScript
+- [preact-router](https://github.com/developit/preact-router) - provides Route Router, and Link components with much less overhead than react-router
+- [react-router-redux](https://github.com/reactjs/react-router-redux) - tools to pass navigation commands as actions
+- [react-router/lib/browserHistory](https://github.com/ReactTraining/react-router) -  each function in the react-router API is available as an individual import ([see guide](https://github.com/ReactTraining/react-router/blob/master/docs/guides/MinimizingBundleSize.md)). browserHistory is a small wrapper for `history` that is used by `syncHistoryWithStore` from react-router-redux
 - [normalize.css](https://necolas.github.io/normalize.css/) is in the html header for nice, modern styles.
 
 ## what dev tools are included
