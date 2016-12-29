@@ -1,9 +1,8 @@
 import { h, render } from 'preact'
 
+import App from './components/App'
+
 render(
-  <div style={{textAlign: 'center'}}>
-    <h1>pre-bp</h1>
-    <h2>very small frontend boilerplate</h2>
-  </div>,
+  <App />,
   document.getElementById('app')
 )
