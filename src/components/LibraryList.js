@@ -1,13 +1,13 @@
 import { h } from 'preact'
 
-function LibraryList ({ libraries }) {
+export default function LibraryList ({ libraries }) {
   return (
     <pre><code>
       {
-        libraries.map((library, key) => {
+        libraries.map( (library, key) => {
           return (
             <span key={key}>
-              {library.name + ' @ ' + library.version}
+              {library.name + ' ' + library.version + '\n'}
             </span>
           )
         })
@@ -15,5 +15,3 @@ function LibraryList ({ libraries }) {
     </code></pre>
   )
 }
-
-export default LibraryList

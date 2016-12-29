@@ -1,10 +1,10 @@
 import { h } from 'preact'
+import { connect } from 'preact-redux'
 
-import LibraryList from './LibraryList'
+import LibraryList from '../components/LibraryList'
 import appStyle from '../styles/appStyle'
-import libraries from '../data/libraries'
 
-function App() {
+function App ({ libraries }) {
   return (
     <div style={appStyle}>
       <h1>pre-bp</h1>
@@ -13,9 +13,16 @@ function App() {
         start building something fast
       </a></p>
       <p>javascript depedencies in production:</p>
-      <LibraryList libraries={libraries} />
+      <LibraryList libraries={ libraries } />
     </div>
   )
 }
 
-export default App
+function mapStateToProps(state) {
+  const libraries = state.libraries;
+  return {
+    libraries
+  }
+}
+
+export default connect(mapStateToProps)(App);

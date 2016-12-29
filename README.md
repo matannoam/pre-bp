@@ -46,6 +46,8 @@ just looking for compatibilty with other react packages, try using
 
 ## what's included for release
 - [preact](https://preactjs.com/) - "a fast 3kB alternative to React with the same ES6 API."
+- [redux](http://redux.js.org/) - a small predictable state container
+- [preact-redux](https://github.com/developit/preact-redux) - [react-redux](http://redux.js.org/docs/basics/UsageWithReact.html) with react aliased to preact
 - [normalize.css](https://necolas.github.io/normalize.css/) is in the html header for nice, modern styles.
 
 ## what dev tools are included
@@ -54,3 +56,5 @@ react apps. UglifyJS is used by default for production builds.
 - webpack-dev-server uses [Express.js](http://expressjs.com/) to serve the app in development.
 - [babel](https://babeljs.io/) with babel-loader and es2015 and react presets, used by default for production builds.
 - [webpack-bundle-size-analyzer](https://github.com/robertknight/webpack-bundle-size-analyzer) - helps confirm the production build are tiny
+- [redux-logger](https://github.com/evgenyrodionov/redux-logger) - logs redux states and actions in the console. included as a dependecy, but not included in
+packing thanks to require().
