@@ -5,14 +5,37 @@
   "repository": "git@github.com:matannoam/pre-bp.git",
   "author": "Matan Noam Shavit <matannoam@gmail.com>",
   "license": "MIT",
+  "babel": {
+    "presets": [
+      "es2015",
+      "react",
+      "stage-2"
+    ],
+    "plugins": [
+      [
+        "transform-react-jsx",
+        {
+          "pragma": "h"
+        }
+      ]
+    ]
+  },
   "dependencies": {
     "preact": "^7.1.0"
   },
   "scripts": {
-    "start": "webpack-dev-server --progress --colors --hot --config ./webpack.config.js"
+    "start": "webpack-dev-server --progress --colors --hot --config ./webpack.config.js",
+    "build": "NODE_ENV=production webpack -p --config ./webpack.prod.config.js --progress --colors",
+    "size": "NODE_ENV=production webpack -p --config ./webpack.prod.config.js --progress --colors --json | webpack-bundle-size-analyzer"
   },
   "devDependencies": {
+    "babel-core": "^6.21.0",
+    "babel-loader": "^6.2.10",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-react": "^6.16.0",
+    "babel-preset-stage-2": "^6.18.0",
     "webpack": "^1.14.0",
+    "webpack-bundle-size-analyzer": "^2.2.0",
     "webpack-dev-server": "^1.16.2"
   }
 }
