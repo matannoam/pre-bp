@@ -7,14 +7,12 @@ import rootReducer from '../reducers/index'
 
 const router = routerMiddleware(browserHistory)
 
-let middleware = []
+let middleware = [router]
 if (process.env.NODE_ENV !== 'production') {
     const createLogger = require('redux-logger')
     const logger = createLogger()
     middleware = [...middleware, logger]
 }
-
-middleware = [...middleware, router]
 
 const createStoreWithMiddleware = applyMiddleware(...middleware)(createStore)
 
