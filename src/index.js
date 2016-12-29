@@ -20,7 +20,7 @@ const history = syncHistoryWithStore(browserHistory, store)
 render(
   <Provider store={store}>
     <App>
-      <Router>
+      <Router history={history}>
         <Route path="/" component={MainPage} default />
         <Route path="/libraries" component={LibrariesPage} />
       </Router>

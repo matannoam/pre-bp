@@ -14,6 +14,8 @@ if (process.env.NODE_ENV !== 'production') {
     middleware = [...middleware, logger]
 }
 
+middleware = [...middleware, router]
+
 const createStoreWithMiddleware = applyMiddleware(...middleware)(createStore)
 
 export default function configureStore(initialState){
