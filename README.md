@@ -12,36 +12,38 @@ pre-bp is a boilerplate app based on [preact](https://preactjs.com/),
 "a fast 3kB alternative to React with the same ES6 API."
 
 ## Getting started
-`git clone` this repository, then in the project directory, run
+`git clone` this repository.
+Then in the project directory, `(rm -rf .git && git init)` to start a new commit history.
 
-```
+Install dependencies
+```zsh
 yarn install
 # or
 npm install
 ```
 
 Then
-```
+```zsh
 yarn start
 # or
 npm start
 ```
-
 and open your browser to http://localhost:8080. Open the console to see logging.
 
 Build a release for production with
-```
+```zsh
 yarn build
 # or
 npm build
 ```
 
 Analyze the size of the code and dependecies (pre-compressed) with
-```
+```zsh
 yarn size
 # or
 npm size
 ```
+([what's `yarn`?](https://yarnpkg.com))
 
 ## Switching later
 pre-bp makes it simple to switch to react later if you want, but if you are
