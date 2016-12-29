@@ -31,7 +31,7 @@
     "webpack-dev-server": "^1.16.2"
   },
   "dependencies": {
-    "history": "3.2.1",
+    "history": "4.5.0",
     "preact": "^7.1.0",
     "preact-redux": "^1.2.0",
     "preact-router": "^2.3.2",
