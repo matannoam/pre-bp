@@ -21,7 +21,9 @@
     ]
   },
   "dependencies": {
-    "preact": "^7.1.0"
+    "preact": "^7.1.0",
+    "preact-redux": "^1.2.0",
+    "redux": "^3.6.0"
   },
   "scripts": {
     "start": "webpack-dev-server --progress --colors --hot --config ./webpack.config.js",
