@@ -1,7 +1,7 @@
 import { h } from 'preact'
 import { Link } from 'preact-router'
 
-export default function MainPage ({ libraries }) {
+export default function MainPage () {
   return (
     <div>
       <p>
