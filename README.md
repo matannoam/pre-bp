@@ -8,7 +8,7 @@ by [@matannoam](https://github.com/matannoam/)
 ## a react app without react
 React is great, but it's bigger than it needs to be to start a project.
 
-pre-bp is boilerplate app based on [preact](https://preactjs.com/),
+pre-bp is a boilerplate app based on [preact](https://preactjs.com/),
 "a fast 3kB alternative to React with the same ES6 API."
 
 ## Getting started
