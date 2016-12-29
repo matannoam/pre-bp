@@ -5,12 +5,12 @@ const initialState = []
 export default function(state = initialState, action) {
   switch (action.type) {
     case actionTypes.LIBRARIES_SET:
-      return setLibraries(state, action);
+      return setLibraries(state, action)
   }
-  return state;
+  return state
 }
 
 function setLibraries(state, action) {
-  const { libraries } = action;
-  return [ ...state, ...libraries ];
+  const { libraries } = action
+  return [ ...state, ...libraries ]
 }
