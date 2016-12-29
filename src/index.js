@@ -1,8 +1,17 @@
 import { h, render } from 'preact'
+import { Provider } from 'preact-redux'
 
-import App from './components/App'
+import configureStore from './stores/configureStore'
+import * as actions from './actions'
+import App from './containers/App'
+import libraries from './data/libraries'
+
+const store = configureStore()
+store.dispatch(actions.setLibraries(libraries))
 
 render(
-  <App />,
+  <Provider store={store}>
+    <App />
+  </Provider>,
   document.getElementById('app')
 )
