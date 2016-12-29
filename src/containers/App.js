@@ -19,10 +19,10 @@ function App ({ libraries }) {
 }
 
 function mapStateToProps(state) {
-  const libraries = state.libraries;
+  const libraries = state.libraries
   return {
     libraries
   }
 }
 
-export default connect(mapStateToProps)(App);
+export default connect(mapStateToProps)(App)
