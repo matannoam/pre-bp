@@ -2,8 +2,9 @@
 very small single-page app boilerplate
 
 ## a react app without react
-React is great, but it's bigger than it needs to be to start a project. pre-bp
-is boilerplate app based on [preact](https://preactjs.com/),
+React is great, but it's bigger than it needs to be to start a project.
+
+pre-bp is boilerplate app based on [preact](https://preactjs.com/),
 "a fast 3kB alternative to React with the same ES6 API."
 
 ## Getting started
@@ -45,7 +46,7 @@ just looking for compatibilty with other react packages, try using
 
 ## what's included for release
 - [preact](https://preactjs.com/) - "a fast 3kB alternative to React with the same ES6 API."
-- [normalize.ccs](https://necolas.github.io/normalize.css/) is in the html header for nice, modern styles.
+- [normalize.css](https://necolas.github.io/normalize.css/) is in the html header for nice, modern styles.
 
 ## what dev tools are included
 - [webpack](https://webpack.github.io/) is the new standard for bundling
