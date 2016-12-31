@@ -1,6 +1,6 @@
 import { createStore, applyMiddleware } from 'redux'
 
-import { routerMiddleware } from 'react-router-redux'
+import { routerMiddleware } from 'preact-router-redux'
 
 import browserHistory from '../lib/browserHistory'
 import rootReducer from '../reducers/index'

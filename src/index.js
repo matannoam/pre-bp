@@ -2,7 +2,7 @@ import { h, render } from 'preact'
 import { Provider } from 'preact-redux'
 
 import { Router, Route } from 'preact-router'
-import { syncHistoryWithStore } from 'react-router-redux'
+import { syncHistoryWithStore } from 'preact-router-redux'
 import browserHistory from './lib/browserHistory'
 
 import configureStore from './stores/configureStore'
