@@ -55,7 +55,7 @@ just looking for compatibilty with other react packages, try using
 - [redux](http://redux.js.org/) - a small predictable state container
 - [preact-redux](https://github.com/developit/preact-redux) - [react-redux](http://redux.js.org/docs/basics/UsageWithReact.html) with react aliased to preact
 - [history](https://github.com/mjackson/history) - manage session history with JavaScript. This provides a method to create history for preact-router-redux to sync with the app state and create middleware for. This is what react-router uses, but pre-bp uses a [bare bones implementation](https://github.com/pre-bp/pre-bp/blob/master/src/lib/browserHistory.js) that imports less code.
-- [pre-bp-router](https://github.com/matannoam/pre-bp-router) - [pre-bp-router](https://github.com/developit/preact-router) without initializing listeners on import (see https://github.com/developit/preact-router/pull/113). Provides Route, Router, and Link components with much less overhead than react-router. ]
+- [pre-bp-router](https://github.com/matannoam/pre-bp-router) - [pre-bp-router](https://github.com/developit/preact-router) without initializing listeners on import (see https://github.com/developit/preact-router/pull/113). Provides Route, Router, and Link components with much less overhead than react-router. This is import for imports without side-effects.
 - [preact-router-redux](https://github.com/matannoam/preact-router-redux) - tools to pass navigation commands as actions. [react-router-redux](https://github.com/reactjs/react-router-redux) with wrpaped history synced to the original. See https://github.com/matannoam/preact-router-redux/pull/1
 - [normalize.css](https://necolas.github.io/normalize.css/) is in the html header for nice, modern styles.
 

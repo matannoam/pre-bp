@@ -21,8 +21,8 @@ render(
   <Provider store={store}>
     <App>
       <Router history={browserHistory}>
-        <Route path="/" component={MainPage} default/>
-        <Route path="/libraries" component={LibrariesPage}/>
+        <Route path='/' component={MainPage} default/>
+        <Route path='/libraries' component={LibrariesPage}/>
       </Router>
     </App>
   </Provider>,
