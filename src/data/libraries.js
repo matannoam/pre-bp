@@ -4,7 +4,7 @@ const libraries = [
     {name: 'preact-redux', version: '1.2.0'},
     {name: 'history', version: '4.5.0'},
     {name: 'preact-router', version: '2.3.2'},
-    {name: 'react-router-redux', version: '4.0.7'},
+    {name: 'preact-router-redux', version: '4.0.8'},
 ]
 
 export default libraries
