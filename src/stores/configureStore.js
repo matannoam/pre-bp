@@ -1,7 +1,5 @@
 import { createStore, applyMiddleware } from 'redux'
-
 import routerMiddleware from 'preact-router-redux/lib/middleware'
-import syncHistoryWithStore from 'preact-router-redux/lib/sync'
 
 import browserHistory from '../lib/browserHistory'
 import rootReducer from '../reducers/index'
@@ -17,11 +15,6 @@ if (process.env.NODE_ENV !== 'production') {
 
 const createStoreWithMiddleware = applyMiddleware(...middleware)(createStore)
 
-function configureStore(initialState){
+export default function configureStore(initialState){
   return createStoreWithMiddleware(rootReducer, initialState)
 }
-
-const store = configureStore()
-const history = syncHistoryWithStore(browserHistory, store)
-
-export { store, history }
