@@ -4,7 +4,7 @@ import { Provider } from 'preact-redux'
 import browserHistory from './lib/browserHistory'
 import { store, history } from './stores/configureStore'
 
-import { Router, Route } from 'preact-router'
+import { Router, Route } from 'pre-bp-router'
 
 import * as actions from './actions'
 import libraries from './data/libraries'

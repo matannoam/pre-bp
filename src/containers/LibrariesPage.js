@@ -1,6 +1,6 @@
 import { h } from 'preact'
 import { connect } from 'preact-redux'
-import { Link } from 'preact-router'
+import { Link } from 'pre-bp-router'
 
 import LibraryList from '../components/LibraryList'
 

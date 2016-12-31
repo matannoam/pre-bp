@@ -1,5 +1,5 @@
 import { h } from 'preact'
-import { Link } from 'preact-router'
+import { Link } from 'pre-bp-router'
 
 export default function MainPage () {
   return (

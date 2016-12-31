@@ -1926,6 +1926,10 @@ pkg-dir@^1.0.0:
   dependencies:
     find-up "^1.0.0"
 
+pre-bp-router@^2.3.3:
+  version "2.3.3"
+  resolved "https://registry.yarnpkg.com/pre-bp-router/-/pre-bp-router-2.3.3.tgz#a639b5e55d174d463e73afbaeb561aa1788a2f70"
+
 preact-redux@^1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/preact-redux/-/preact-redux-1.2.0.tgz#275151431f9039279682e52c508d2655b792cb5a"
@@ -1933,10 +1937,6 @@ preact-redux@^1.2.0:
 preact-router-redux@^4.0.8:
   version "4.0.8"
   resolved "https://registry.yarnpkg.com/preact-router-redux/-/preact-router-redux-4.0.8.tgz#701042062f9783144d9ad99975fe5e3d0027c4a4"
-
-preact-router@^2.3.2:
-  version "2.3.2"
-  resolved "https://registry.yarnpkg.com/preact-router/-/preact-router-2.3.2.tgz#4a6db9ceb0bd29e3eb5ad27b4646e7c7e1d3e68f"
 
 preact@^7.1.0:
   version "7.1.0"
