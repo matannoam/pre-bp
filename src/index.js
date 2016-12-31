@@ -1,7 +1,6 @@
 import { h, render } from 'preact'
 import { Provider } from 'preact-redux'
 
-import { syncHistoryWithStore } from 'react-router-redux'
 import browserHistory from './lib/browserHistory'
 
 import { store, history } from './stores/configureStore'
