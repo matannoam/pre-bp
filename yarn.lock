@@ -1934,9 +1934,9 @@ preact-redux@^1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/preact-redux/-/preact-redux-1.2.0.tgz#275151431f9039279682e52c508d2655b792cb5a"
 
-preact-router-redux@^4.0.8:
-  version "4.0.8"
-  resolved "https://registry.yarnpkg.com/preact-router-redux/-/preact-router-redux-4.0.8.tgz#701042062f9783144d9ad99975fe5e3d0027c4a4"
+preact-router-redux@^4.0.9:
+  version "4.0.9"
+  resolved "https://registry.yarnpkg.com/preact-router-redux/-/preact-router-redux-4.0.9.tgz#f54511d48b0bf529516f4e0d3f97c9f762e84c8d"
 
 preact@^7.1.0:
   version "7.1.0"
