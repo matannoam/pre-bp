@@ -4,7 +4,7 @@ very small single-page app boilerplate
 live example - https://pre-bp.github.io/
 
 by [@matannoam](https://github.com/matannoam/)
-
+with [@ForsakenHarmon](https://github.com/ForsakenHarmon)
 ## a react app without react
 React is great, but it's bigger than it needs to be to start a project.
 
