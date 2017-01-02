@@ -33,7 +33,7 @@
   "dependencies": {
     "gzip-size-cli": "^1.0.0",
     "history": "4.5.0",
-    "pre-bp-router": "^2.3.6",
+    "pre-bp-router": "^2.3.8",
     "preact": "^7.1.0",
     "preact-redux": "^1.2.0",
     "preact-router-redux": "^4.1.0",
