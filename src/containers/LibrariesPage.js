@@ -1,15 +1,16 @@
 import { h } from 'preact'
 import { connect } from 'preact-redux'
-import { Link } from 'preact-router'
+import { Link } from 'pre-bp-router'
 
 import LibraryList from '../components/LibraryList'
+import BackToMainLink from '../components/BackToMainLink'
 
 function LibrariesPage ({ libraries }) {
   return (
     <div>
       <p>JavaScript depedencies in production:</p>
       <LibraryList libraries={ libraries } />
-      <p><Link href="/">back to main page</Link></p>
+      <BackToMainLink />
     </div>
   )
 }

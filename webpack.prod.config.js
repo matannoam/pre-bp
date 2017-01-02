@@ -4,9 +4,6 @@ module.exports = {
   entry: {
     main: './src/index.js'
   },
-  resolve: {
-    extensions: ['.js', '.jsx', '']
-  },
   output: {
     path: __dirname + '/public',
     publicPath: '/',
@@ -16,7 +13,7 @@ module.exports = {
     loaders: [{
       test: /\.(js|jsx)$/,
       exclude: /node_modules/,
-      loader: "babel-loader"
+      loader: 'babel-loader'
     }]
   },
   plugins: [

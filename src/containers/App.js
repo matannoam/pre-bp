@@ -1,4 +1,5 @@
 import { h } from 'preact'
+import { Link } from 'pre-bp-router'
 
 import appStyle from '../styles/appStyle'
 
