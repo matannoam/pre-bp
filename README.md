@@ -29,7 +29,7 @@ yarn start
 # or
 npm start
 ```
-and open your browser to http://localhost:8080. Open the console to see logging.
+and open your browser to [http://localhost:8080](http://localhost:8080). Open the console to see logging.
 
 Replay your actions in development with [redux-devtools-extension](https://github.com/zalmoxisus/redux-devtools-extension).
 Available for Chrome, Firefox, and Electron.
