@@ -2069,9 +2069,9 @@ pkg-dir@^1.0.0:
   dependencies:
     find-up "^1.0.0"
 
-pre-bp-router@^2.3.8:
-  version "2.3.8"
-  resolved "https://registry.yarnpkg.com/pre-bp-router/-/pre-bp-router-2.3.8.tgz#2290ae266e6d4c91ecd2698d5d0c8d63f30930c9"
+pre-bp-router@^2.3.9:
+  version "2.3.9"
+  resolved "https://registry.yarnpkg.com/pre-bp-router/-/pre-bp-router-2.3.9.tgz#73a15e41092e5e50d15ce9e1d670f3752d8cb3c0"
 
 preact-redux@^1.2.0:
   version "1.2.0"
