@@ -36,12 +36,13 @@ yarn build
 # or
 npm build
 ```
+which will display the gzipped size of the build.
 
 Analyze the size of the code and dependecies (pre-compressed) with
 ```zsh
-yarn size
+yarn size:imports
 # or
-npm size
+npm size:imports
 ```
 ([what's `yarn`?](https://yarnpkg.com))
 
