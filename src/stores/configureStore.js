@@ -16,7 +16,7 @@ if (process.env.NODE_ENV !== 'production') {
 const createStoreWithMiddleware = applyMiddleware(...middleware)(createStore)
 
 const enhancer = (
-  process.env.NODE_ENV !== 'production'
+  (process.env.NODE_ENV !== 'production' || undefined)
   && window.__REDUX_DEVTOOLS_EXTENSION__
   && window.__REDUX_DEVTOOLS_EXTENSION__()
 )
