@@ -1,5 +1,5 @@
 # pre-bp
-very small single-page app boilerplate
+very small single-page app boilerplate - only 15kb gzipped
 
 live example - https://pre-bp.github.io/
 
@@ -9,27 +9,28 @@ with [@ForsakenHarmon](https://github.com/ForsakenHarmon)
 React is great, but it's bigger than it needs to be to start a project.
 
 pre-bp is a boilerplate app based on [preact](https://preactjs.com/),
-"a fast 3kB alternative to React with the same ES6 API."
+"a fast 3kB alternative to React with the same ES6 API." It includes a router and redux, and is ready to use with [redux-devtools-extnesion](https://github.com/zalmoxisus/redux-devtools-extension).
 
 ## Getting started
-`git clone` this repository.
-Then in the project directory, `(rm -rf .git && git init)` to start a new commit history.
+```Shell
+git clone <THIS RESPOSITORY>
+(rm -rf .git && git init)  # begin a new commit history for your project
 
-Install dependencies
-```zsh
-yarn install
+yarn init  # rename the node module for your project
+# or
+npm init
+
+yarn install  # Install dependencies
 # or
 npm install
-```
-([what's `yarn`?](https://yarnpkg.com))
 
-Then
-```zsh
-yarn start
+yarn start  # start the development server
 # or
 npm start
 ```
-and open your browser to [http://localhost:8080](http://localhost:8080). Open the console to see logging.
+([what's `yarn`?](https://yarnpkg.com))
+
+After the node modules are installed and the development server is running, open your browser to [http://localhost:8080](http://localhost:8080). Open the console to see logging.
 
 Replay your actions in development with [redux-devtools-extension](https://github.com/zalmoxisus/redux-devtools-extension).
 Available for Chrome, Firefox, and Electron.
