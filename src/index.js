@@ -11,6 +11,9 @@ import libraries from './data/libraries'
 import App from './containers/App'
 import MainPage from './containers/MainPage'
 import LibrariesPage from './containers/LibrariesPage'
+import PageOne from './containers/PageOne'
+import PageTwo from './containers/PageTwo'
+import PageThree from './containers/PageThree'
 
 const store = configureStore()
 const history = syncHistoryWithStore(browserHistory, store)
@@ -20,9 +23,12 @@ store.dispatch(actions.setLibraries(libraries))
 render(
   <Provider store={store}>
     <App>
-      <Router history={browserHistory}>
-        <Route path='/' component={MainPage} default/>
-        <Route path='/libraries' component={LibrariesPage}/>
+      <Router history={history}>
+        <Route path="/" component={MainPage} default/>
+        <Route path="/libraries" component={LibrariesPage}/>
+        <Route path="/one" component={PageOne}/>
+        <Route path="/two" component={PageTwo}/>
+        <Route path="/three" component={PageThree}/>
       </Router>
     </App>
   </Provider>,
