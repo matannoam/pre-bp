@@ -21,6 +21,7 @@ yarn install
 # or
 npm install
 ```
+([what's `yarn`?](https://yarnpkg.com))
 
 Then
 ```zsh
@@ -30,20 +31,24 @@ npm start
 ```
 and open your browser to http://localhost:8080. Open the console to see logging.
 
+Replay your actions in development with [redux-devtools-extension](https://github.com/zalmoxisus/redux-devtools-extension).
+Available for Chrome, Firefox, and Electron.
+
+
 Build a release for production with
 ```zsh
 yarn build
 # or
 npm build
 ```
+which will display the gzipped size of the build.
 
 Analyze the size of the code and dependecies (pre-compressed) with
 ```zsh
-yarn size
+yarn size:imports
 # or
-npm size
+npm size:imports
 ```
-([what's `yarn`?](https://yarnpkg.com))
 
 ## Switching later
 pre-bp makes it simple to switch to react later if you want, but if you are
@@ -54,9 +59,9 @@ just looking for compatibilty with other react packages, try using
 - [preact](https://preactjs.com/) - "a fast 3kB alternative to React with the same ES6 API."
 - [redux](http://redux.js.org/) - a small predictable state container
 - [preact-redux](https://github.com/developit/preact-redux) - [react-redux](http://redux.js.org/docs/basics/UsageWithReact.html) with react aliased to preact
-- [history](https://github.com/mjackson/history) - manage session history with JavaScript. This provides a method to create history for react-router-redux to sync with the app state and create middleware for. This is what react-router uses, but pre-bp uses a [bare bones implementation](https://github.com/pre-bp/pre-bp/blob/master/src/lib/browserHistory.js) that imports less code.
-- [preact-router](https://github.com/developit/preact-router) - provides Route, Router, and Link components with much less overhead than react-router
-- [react-router-redux](https://github.com/reactjs/react-router-redux) - tools to pass navigation commands as actions
+- [history](https://github.com/mjackson/history) - manage session history with JavaScript. This provides a method to create history for preact-router-redux to sync with the app state and create middleware for. This is what react-router uses, but pre-bp uses a [bare bones implementation](https://github.com/pre-bp/pre-bp/blob/master/src/lib/browserHistory.js) that imports less code.
+- [pre-bp-router](https://github.com/matannoam/pre-bp-router) - [pre-bp-router](https://github.com/developit/preact-router) without initializing listeners on import (see https://github.com/developit/preact-router/pull/113). Provides Route, Router, and Link components with much less overhead than react-router. This is import for imports without side-effects. It also listens to it's underlying history to route, allowing for replay tools on the router.
+- [preact-router-redux](https://github.com/matannoam/preact-router-redux) - tools to pass navigation commands as actions. [react-router-redux](https://github.com/reactjs/react-router-redux) with wrpaped history synced to the original. See https://github.com/matannoam/preact-router-redux/pull/1. It also supports `history` v4.
 - [normalize.css](https://necolas.github.io/normalize.css/) is in the html header for nice, modern styles.
 
 ## what dev tools are included

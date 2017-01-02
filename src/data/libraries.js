@@ -2,9 +2,9 @@ const libraries = [
     {name: 'preact', version: '7.1.0'},
     {name: 'redux', version: '3.6.0'},
     {name: 'preact-redux', version: '1.2.0'},
-    {name: 'history', version: '3.2.1'},
-    {name: 'preact-router', version: '2.3.2'},
-    {name: 'react-router-redux', version: '4.0.7'},
+    {name: 'history', version: '4.5.0'},
+    {name: 'pre-bp-router', version: '2.3.9'},
+    {name: 'preact-router-redux', version: '4.1.0'},
 ]
 
 export default libraries

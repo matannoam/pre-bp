@@ -1,2 +1,2 @@
-import createBrowserHistory from 'history/lib/createBrowserHistory'
+import createBrowserHistory from 'history/createBrowserHistory'
 export default createBrowserHistory()
