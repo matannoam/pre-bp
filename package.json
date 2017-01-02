@@ -1,6 +1,6 @@
 {
   "name": "pre-bp",
-  "version": "0.2.8",
+  "version": "0.3.0",
   "main": "index.js",
   "repository": "git@github.com:pre-bp/pre-bp.git",
   "author": "Matan Noam Shavit <matannoam@gmail.com>",
