@@ -36,7 +36,7 @@
     "pre-bp-router": "^2.3.6",
     "preact": "^7.1.0",
     "preact-redux": "^1.2.0",
-    "preact-router-redux": "^4.0.9",
+    "preact-router-redux": "^4.1.0",
     "pretty-bytes-cli": "^2.0.0",
     "redux": "^3.6.0",
     "redux-logger": "^2.7.4"
