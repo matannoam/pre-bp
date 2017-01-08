@@ -9,11 +9,11 @@ with [@ForsakenHarmon](https://github.com/ForsakenHarmon)
 React is great, but it's bigger than it needs to be to start a project.
 
 pre-bp is a boilerplate app based on [preact](https://preactjs.com/),
-"a fast 3kB alternative to React with the same ES6 API." It includes a router and redux, and is ready to use with [redux-devtools-extnesion](https://github.com/zalmoxisus/redux-devtools-extension).
+"a fast 3kB alternative to React with the same ES6 API." It includes a router and redux, and is ready to use with [redux-devtools-extension](https://github.com/zalmoxisus/redux-devtools-extension).
 
 ## Getting started
 ```Shell
-git clone <THIS RESPOSITORY>
+git clone <THIS REPOSITORY>
 (rm -rf .git && git init)  # begin a new commit history for your project
 
 yarn init  # rename the node module for your project
@@ -70,6 +70,6 @@ just looking for compatibilty with other react packages, try using
 react apps. UglifyJS is used by default for production builds.
 - webpack-dev-server uses [Express.js](http://expressjs.com/) to serve the app in development.
 - [babel](https://babeljs.io/) is a transpiler, which allows the code to be run in most modern browsers. The es2015 and react presets are included and used by default for production builds, and well as [stage-2](https://git.io/es-next#stage-2) for spreads and other syntax.
-- [webpack-bundle-size-analyzer](https://github.com/robertknight/webpack-bundle-size-analyzer) - helps confirm the production build are tiny
-- [redux-logger](https://github.com/evgenyrodionov/redux-logger) - logs redux states and actions in the console. included as a dependecy, but not included in
+- [webpack-bundle-size-analyzer](https://github.com/robertknight/webpack-bundle-size-analyzer) - helps confirm the production builds are tiny
+- [redux-logger](https://github.com/evgenyrodionov/redux-logger) - logs redux states and actions to the console. included as a dependency, but not included in
 packing thanks to require().
