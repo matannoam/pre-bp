@@ -71,5 +71,5 @@ react apps. UglifyJS is used by default for production builds.
 - webpack-dev-server uses [Express.js](http://expressjs.com/) to serve the app in development.
 - [babel](https://babeljs.io/) is a transpiler, which allows the code to be run in most modern browsers. The es2015 and react presets are included and used by default for production builds, and well as [stage-2](https://git.io/es-next#stage-2) for spreads and other syntax.
 - [webpack-bundle-size-analyzer](https://github.com/robertknight/webpack-bundle-size-analyzer) - helps confirm the production builds are tiny
-- [redux-logger](https://github.com/evgenyrodionov/redux-logger) - logs redux states and actions to the console. included as a dependency, but not included in
-packing thanks to require().
+- [redux-logger](https://github.com/evgenyrodionov/redux-logger) - logs redux states and actions to the console. included as a dependency, but not included in packing thanks to require().
+- ready to use with [redux-devtools-extension](https://github.com/zalmoxisus/redux-devtools-extension) - useful tools such as replaying actions
