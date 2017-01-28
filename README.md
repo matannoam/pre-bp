@@ -3,6 +3,8 @@ very small single-page app boilerplate - only 15kb gzipped
 
 live example - https://pre-bp.github.io/
 
+> [What's Included](https://github.com/pre-bp/pre-bp#whats-included-for-release) "the good stuff"
+
 by [@matannoam](https://github.com/matannoam/)
 with [@ForsakenHarmony](https://github.com/ForsakenHarmony)
 ## a react app without react
@@ -31,6 +33,9 @@ npm start
 ([what's `yarn`?](https://yarnpkg.com))
 
 After the node modules are installed and the development server is running, open your browser to [http://localhost:8080](http://localhost:8080). Open the console to see logging.
+
+See information about the components in your browsers inspector with [react-devtools](https://github.com/facebook/react-devtools).
+Available for Chrome and Firefox.
 
 Replay your actions in development with [redux-devtools-extension](https://github.com/zalmoxisus/redux-devtools-extension).
 Available for Chrome, Firefox, and Electron.
@@ -70,6 +75,7 @@ just looking for compatibilty with other react packages, try using
 react apps. UglifyJS is used by default for production builds.
 - webpack-dev-server uses [Express.js](http://expressjs.com/) to serve the app in development.
 - [babel](https://babeljs.io/) is a transpiler, which allows the code to be run in most modern browsers. The es2015 and react presets are included and used by default for production builds, and well as [stage-2](https://git.io/es-next#stage-2) for spreads and other syntax.
-- [webpack-bundle-size-analyzer](https://github.com/robertknight/webpack-bundle-size-analyzer) - helps confirm the production builds are tiny
+- [webpack-bundle-size-analyzer](https://github.com/robertknight/webpack-bundle-size-analyzer) - helps confirm the production builds are tiny.
 - [redux-logger](https://github.com/evgenyrodionov/redux-logger) - logs redux states and actions to the console. included as a dependency, but not included in packing thanks to require().
-- ready to use with [redux-devtools-extension](https://github.com/zalmoxisus/redux-devtools-extension) - useful tools such as replaying actions
+- ready to use with [react-devtools](https://github.com/facebook/react-devtools) - adds an inspector tab in the browser for components.
+- ready to use with [redux-devtools-extension](https://github.com/zalmoxisus/redux-devtools-extension) - useful tools such as replaying actions.
