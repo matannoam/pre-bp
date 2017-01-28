@@ -3,7 +3,7 @@ very small single-page app boilerplate - only 15kb gzipped
 
 live example - https://pre-bp.github.io/
 
-> [What's Included](https://github.com/pre-bp/pre-bp#whats-included-for-release) "the good stuff"
+> [What's Included](#whats-included-for-release) "the good stuff"
 
 by [@matannoam](https://github.com/matannoam/)
 with [@ForsakenHarmony](https://github.com/ForsakenHarmony)
