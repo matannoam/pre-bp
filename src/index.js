@@ -15,6 +15,10 @@ import PageOne from './containers/PageOne'
 import PageTwo from './containers/PageTwo'
 import PageThree from './containers/PageThree'
 
+if (process.env.NODE_ENV !== 'production') {
+  require('preact/devtools')
+}
+
 const store = configureStore()
 const history = syncHistoryWithStore(browserHistory, store)
 
