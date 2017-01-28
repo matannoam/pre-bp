@@ -1,3 +1,5 @@
+var DashboardPlugin = require('webpack-dashboard/plugin');
+
 module.exports = {
   entry: [
     './src/index.js'
@@ -9,6 +11,9 @@ module.exports = {
       loader: 'babel-loader'
     }]
   },
+  plugins: [
+    new DashboardPlugin()
+  ],
   output: {
     path: __dirname + '/public',
     publicPath: '/',
