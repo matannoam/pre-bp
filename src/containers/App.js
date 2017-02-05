@@ -1,17 +1,37 @@
-import { h } from 'preact'
-import { Link } from 'pre-bp-router'
+import { h, render } from 'preact'
+import { Provider } from 'preact-redux'
+import { Router, Route } from 'preact-router'
+import syncHistoryWithStore from 'preact-router-redux/lib/sync'
 
-import appStyle from '../styles/appStyle'
+import browserHistory from '../lib/browserHistory'
+import configureStore from '../stores/configureStore'
 
-export default function App ({ children }) {
+import * as actions from '../actions'
+import libraries from '../data/libraries'
+import BasePage from './BasePage'
+import MainPage from './MainPage'
+import LibrariesPage from './LibrariesPage'
+import PageOne from './PageOne'
+import PageTwo from './PageTwo'
+import PageThree from './PageThree'
+
+const store = configureStore()
+const history = syncHistoryWithStore(browserHistory, store)
+
+store.dispatch(actions.setLibraries(libraries))
+
+export default function App () {
   return (
-    <div style={appStyle}>
-      <h1>pre-bp</h1>
-      <h2>very small frontend boilerplate</h2>
-      {children}
-      <p><small>
-        hand-made by <a href='https://github.com/matannoam'>Matan Noam Shavit</a>.
-      </small></p>
-    </div>
+    <Provider store={store}>
+      <BasePage>
+        <Router history={history}>
+          <Route path="/" component={MainPage} default/>
+          <Route path="/libraries" component={LibrariesPage}/>
+          <Route path="/one" component={PageOne}/>
+          <Route path="/two" component={PageTwo}/>
+          <Route path="/three" component={PageThree}/>
+        </Router>
+      </BasePage>
+    </Provider>
   )
 }
