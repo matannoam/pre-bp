@@ -1,5 +1,5 @@
 import { h } from 'preact'
-import { Link } from 'pre-bp-router'
+import { Link } from 'preact-router'
 
 
 export default function NavigationBar () {
