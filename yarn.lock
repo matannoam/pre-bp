@@ -2318,9 +2318,9 @@ portfinder@^1.0.9:
     debug "^2.2.0"
     mkdirp "0.5.x"
 
-preact-redux@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/preact-redux/-/preact-redux-2.0.0.tgz#6b9ec5967c962e08e61503b9a8b6f24a1f18e3b8"
+preact-redux@1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/preact-redux/-/preact-redux-1.2.0.tgz#275151431f9039279682e52c508d2655b792cb5a"
 
 preact-router-redux@^4.1.0:
   version "4.1.0"
