@@ -32,10 +32,8 @@ npm start
 ```
 ([what's `yarn`?](https://yarnpkg.com))
 
-After the node modules are installed, run the development server. Output will be rendered using
-[webpack-dashboard](https://github.com/FormidableLabs/webpack-dashboard).
-To just use the console for output, use `start:console`.
-Open your browser to [http://localhost:8080](http://localhost:8080) to view the app. Open the console to see logging.
+After the node modules are installed, run the development server.
+Open your browser to [http://localhost:8080](http://localhost:8080) to view the app. Open the console to see logging. The page will refreh automatically if you update any code in the `/src` folder thanks to the `--inline` option of webpack-dev-server.
 
 See information about the components in your browsers inspector with [react-devtools](https://github.com/facebook/react-devtools).
 Available for Chrome and Firefox.
@@ -75,10 +73,9 @@ just looking for compatibilty with other react packages, try using
 
 ## what dev tools are included
 - [webpack](https://webpack.github.io/) is the new standard for bundling
-react apps. UglifyJS is used by default for production builds.
-- webpack-dev-server uses [Express.js](http://expressjs.com/) to serve the app in development.
+react apps. [UglifyJS](https://github.com/mishoo/UglifyJS2) is used by default to minify production builds.
+- [webpack-dev-server](https://webpack.github.io/docs/webpack-dev-server.html)  uses [Express.js](http://expressjs.com/) to serve the app in development.
 - [babel](https://babeljs.io/) is a transpiler, which allows the code to be run in most modern browsers. The es2015 and react presets are included and used by default for production builds, and well as [stage-2](https://git.io/es-next#stage-2) for spreads and other syntax.
-- [webpack-dashboard](https://github.com/FormidableLabs/webpack-dashboard) displays a good looking CLI for webpack output.
 - [webpack-bundle-size-analyzer](https://github.com/robertknight/webpack-bundle-size-analyzer) - helps confirm the production builds are tiny.
 - [redux-logger](https://github.com/evgenyrodionov/redux-logger) - logs redux states and actions to the console. included as a dependency, but not included in packing thanks to require().
 - ready to use with [react-devtools](https://github.com/facebook/react-devtools) - adds an inspector tab in the browser for components.

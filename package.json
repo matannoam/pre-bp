@@ -29,10 +29,9 @@
     "gzip-size-cli": "^1.0.0",
     "pretty-bytes-cli": "^2.0.0",
     "redux-logger": "^2.7.4",
-    "webpack": "^1.14.0",
+    "webpack": "^2.2.1",
     "webpack-bundle-size-analyzer": "^2.2.0",
-    "webpack-dashboard": "^0.3.0",
-    "webpack-dev-server": "^1.16.2"
+    "webpack-dev-server": "^2.3.0"
   },
   "dependencies": {
     "history": "4.5.0",
@@ -43,8 +42,7 @@
     "redux": "^3.6.0"
   },
   "scripts": {
-    "start": "webpack-dashboard -- webpack-dev-server --config ./webpack.config.js",
-    "start:console": "webpack-dev-server --progress --colors --config ./webpack.config.js",
+    "start": "webpack-dev-server --progress --colors --inline --config ./webpack.config.js",
     "build": "NODE_ENV=production webpack -p --config ./webpack.prod.config.js --progress --colors && size=$(gzip-size public/bundle.js) && echo \"gzip size: $size / $(pretty-bytes $size)\"",
     "size:imports": "NODE_ENV=production webpack -p --config ./webpack.prod.config.js --progress --colors --json | webpack-bundle-size-analyzer"
   }
