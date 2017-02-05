@@ -8,7 +8,7 @@ import BackToMainLink from '../components/BackToMainLink'
 function LibrariesPage ({ libraries }) {
   return (
     <div>
-      <h3>pre-bp 0.4.2</h3>
+      <h3>pre-bp 0.5.0</h3>
       <p>JavaScript depedencies in production:</p>
       <LibraryList libraries={ libraries } />
       <BackToMainLink />
