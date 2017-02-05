@@ -10,7 +10,7 @@ export default function BasePage ({ children }) {
       <h2>very small frontend boilerplate</h2>
       {children}
       <p><small>
-        hand-made by <a href='https://github.com/matannoam'>Matan Noam Shavit</a>.
+        hand-made by <a href='https://github.com/matannoam' target='_blank'>Matan Noam Shavit</a>.
       </small></p>
     </div>
   )
